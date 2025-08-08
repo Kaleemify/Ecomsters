@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ecomsters | Professional E-commerce Automation Services</title>
+    <meta name="description" content="Privacy Policy for Ecomsters - Learn how we collect, use, and protect your personal information when you use our e-commerce automation services including Amazon FBA, Walmart WFS, TikTok Shop, and Shopify automation.">
+    <meta name="keywords" content="privacy policy, data protection, ecommerce automation privacy, Amazon FBA privacy, Walmart WFS privacy, TikTok Shop privacy, Shopify automation privacy">
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ecomsters.com/privacy-policy.html" />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ecomsters.com/privacy-policy.html">
+    <meta property="og:title" content="Privacy Policy - Ecomsters">
+    <meta property="og:description" content="Learn how we collect, use, and protect your personal information when you use our e-commerce automation services.">
+    <meta property="og:image" content="https://www.ecomsters.com/images/social-preview.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Privacy Policy - Ecomsters">
+    <meta name="twitter:description" content="Learn how we collect, use, and protect your personal information when you use our e-commerce automation services.">
+    <meta name="twitter:image" content="https://www.ecomsters.com/images/social-preview.jpg">
+
+    <!-- CDN Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-orange: #ff9c08;
+            --dark-blue: #232f3e;
+            --light-gray: #f8f9fa;
+            --text-dark: #333;
+            --gradient-orange: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+            --gradient-blue: linear-gradient(135deg, #232f3e 0%, #1a252f 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Header Styles - Same as homepage */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 8px 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar.scrolled {
+            background: rgba(35, 47, 62, 0.95);
+            padding: 6px 0;
+        }
+
+        .navbar.scrolled .nav-link {
+            color: white !important;
+        }
+
+        .navbar.scrolled .navbar-brand {
+            color: white !important;
+        }
+
+        .navbar-brand {
+            color: var(--text-dark) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 700;
+            margin: 0 6px;
+            padding: 8px 12px !important;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: min(0.75vw, 12px);
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-orange) !important;
+            background: rgba(255, 156, 8, 0.1);
+        }
+
+        .navbar.scrolled .nav-link:hover {
+            color: var(--primary-orange) !important;
+            background: rgba(255, 156, 8, 0.2);
+        }
+
+        .btn-hire {
+            background: var(--primary-orange);
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-orange);
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .btn-hire:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 156, 8, 0.3);
+        }
+
+        /* MEGA MENU STYLES */
+        .navbar-nav .dropdown {
+            position: static;
+        }
+
+        .mega-menu {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: white;
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
+            padding: 40px 0;
+            margin-top: 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .mega-menu.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .navbar.scrolled .mega-menu {
+            background: var(--dark-blue);
+            color: white;
+        }
+
+        .mega-menu-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .mega-menu-column {
+            padding: 0 20px;
+        }
+
+        .mega-menu-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-orange);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar.scrolled .mega-menu-title {
+            color: var(--primary-orange);
+        }
+
+        .mega-menu-item {
+            display: block;
+            padding: 8px 0;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .mega-menu-item:hover {
+            color: var(--primary-orange);
+            padding-left: 10px;
+        }
+
+        .navbar.scrolled .mega-menu-item {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .navbar.scrolled .mega-menu-item:hover {
+            color: var(--primary-orange);
+        }
+
+        .mega-menu-item i {
+            width: 18px;
+            margin-right: 8px;
+            font-size: 12px;
+        }
+
+        .services-dropdown {
+            position: relative;
+        }
+
+        .services-dropdown:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Mobile Menu */
+        .navbar-toggler {
+            border: 2px solid var(--text-dark);
+            padding: 4px 6px;
+            border-radius: 8px;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 0.25rem rgba(255, 156, 8, 0.25);
+            border-color: var(--primary-orange);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            width: 20px;
+            height: 20px;
+        }
+
+        .navbar.scrolled .navbar-toggler {
+            border-color: white;
+        }
+
+        .navbar.scrolled .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1199.98px) {
+            .nav-link {
+                font-size: 11px;
+                margin: 0 3px;
+                padding: 6px 8px !important;
+            }
+            
+            .btn-hire {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar {
+                padding: 6px 0;
+            }
+            
+            .navbar-collapse {
+                background: white;
+                margin-top: 12px;
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                position: absolute;
+                top: 100%;
+                left: 10px;
+                right: 10px;
+                z-index: 1000;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+
+            .navbar.scrolled .navbar-collapse {
+                background: var(--dark-blue);
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .navbar-nav {
+                gap: 3px;
+            }
+
+            .nav-item {
+                width: 100%;
+            }
+
+            .nav-link {
+                margin: 0;
+                padding: 10px 14px !important;
+                border-radius: 8px;
+                font-size: 14px;
+                text-align: left;
+                width: 100%;
+                display: block;
+                font-weight: 600;
+            }
+
+            .mega-menu {
+                position: static !important;
+                transform: none !important;
+                margin-top: 3px;
+                margin-left: 14px;
+                width: calc(100% - 28px);
+                background: rgba(0, 0, 0, 0.05);
+                box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                padding: 15px;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .navbar.scrolled .mega-menu {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            .mega-menu-content {
+                padding: 0;
+            }
+
+            .mega-menu-column {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .mega-menu-column:last-child {
+                border-bottom: none;
+            }
+
+            .navbar.scrolled .mega-menu-column {
+                border-bottom-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .mega-menu-title {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .mega-menu-item {
+                padding: 5px 0;
+                font-size: 12px;
+            }
+
+            .btn-hire {
+                margin-top: 12px;
+                padding: 12px 20px;
+                text-align: center;
+                display: block;
+                width: 100%;
+                font-size: 14px;
+            }
+
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .navbar-collapse .nav-link,
+            .navbar-collapse .mega-menu-item {
+                color: black !important;
+            }
+
+            .navbar-collapse .nav-link:hover,
+            .navbar-collapse .mega-menu-item:hover {
+                color: var(--primary-orange) !important;
+            }
+
+            .navbar.scrolled .navbar-collapse .nav-link,
+            .navbar.scrolled .navbar-collapse .mega-menu-item {
+                color: white !important;
+            }
+
+            .navbar.scrolled .navbar-collapse .nav-link:hover,
+            .navbar.scrolled .navbar-collapse .mega-menu-item:hover {
+                color: var(--primary-orange) !important;
+            }
+
+            .navbar>.container {
+                position: relative;
+            }
+
+            .dropdown {
+                position: static !important;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .navbar {
+                padding: 4px 0;
+            }
+            
+            .navbar-collapse {
+                left: 8px;
+                right: 8px;
+                padding: 16px;
+                margin-top: 8px;
+            }
+
+            .navbar-brand {
+                font-size: 1.1rem;
+            }
+
+            .nav-link {
+                font-size: 13px;
+                padding: 8px 12px !important;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .navbar-collapse {
+                left: 5px;
+                right: 5px;
+                padding: 14px;
+            }
+
+            .navbar-brand {
+                font-size: 1rem;
+            }
+
+            .nav-link {
+                font-size: 12px;
+                padding: 7px 10px !important;
+            }
+        }
+
+        .navbar-collapse::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .navbar-collapse::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+        }
+
+        .navbar-collapse::-webkit-scrollbar-thumb {
+            background: var(--primary-orange);
+            border-radius: 2px;
+        }
+
+        /* Privacy Policy Specific Styles */
+        .privacy-hero {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 100px 0 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .privacy-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(45deg, rgba(255, 156, 8, 0.1) 1px, transparent 1px),
+                linear-gradient(-45deg, rgba(255, 156, 8, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(30px, 30px);
+            }
+        }
+
+        .privacy-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .privacy-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .privacy-content {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .privacy-section {
+            margin-bottom: 50px;
+        }
+
+        .privacy-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary-orange);
+            position: relative;
+        }
+
+        .privacy-section h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-orange);
+            border-radius: 2px;
+        }
+
+        .privacy-section h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+
+        .privacy-section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .privacy-section ul, .privacy-section ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        .privacy-section li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .highlight-box {
+            background: rgba(255, 156, 8, 0.1);
+            border-left: 4px solid var(--primary-orange);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box h4 {
+            color: var(--dark-blue);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact-info-box {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .contact-info-box h3 {
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+        }
+
+        .contact-info-box p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info-box a {
+            color: var(--primary-orange);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info-box a:hover {
+            color: var(--dark-blue);
+        }
+
+        .last-updated {
+            background: var(--primary-orange);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Footer Styles - Same as homepage */
+        .footer {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+        }
+
+        .footer-brand {
+            margin-bottom: 30px;
+        }
+
+        .footer-logo {
+            font-weight: 800;
+            font-size: 2rem;
+            background: linear-gradient(135deg, var(--primary-orange), #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .footer-tagline {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 35px;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .footer-section-title {
+            color: var(--primary-orange);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .footer-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-orange), #ffb347);
+            border-radius: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .footer-links a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, var(--primary-orange), #ffb347);
+            transition: width 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-orange);
+            padding-left: 8px;
+        }
+
+        .footer-links a:hover::before {
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .contact-title {
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .social-icons a {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.1rem;
+        }
+
+        .social-icons a:hover {
+            background: linear-gradient(135deg, var(--primary-orange), #ffb347);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 156, 8, 0.3);
+            border-color: transparent;
+        }
+
+        .btn-book-call {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--primary-orange), #ffb347);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(255, 156, 8, 0.3);
+        }
+
+        .btn-book-call:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 156, 8, 0.4);
+            color: white;
+        }
+
+        .btn-book-call i {
+            font-size: 0.9rem;
+        }
+
+        .footer-divider {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            margin: 50px 0 30px;
+        }
+
+        .footer-bottom {
+            padding-top: 20px;
+        }
+
+        .copyright-text {
+            color: rgba(255, 255, 255, 0.5);
+            margin: 0;
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+
+        .footer-bottom-links a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-orange);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsive for Privacy Policy */
+        @media (max-width: 768px) {
+            .privacy-hero {
+                padding: 60px 0 30px;
+            }
+
+            .privacy-hero h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-hero p {
+                font-size: 1rem;
+            }
+
+            .privacy-content {
+                padding: 50px 0;
+            }
+
+            .privacy-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .privacy-section h3 {
+                font-size: 1.2rem;
+            }
+
+            .footer {
+                padding: 60px 0 30px;
+            }
+            
+            .footer-logo {
+                font-size: 1.8rem;
+            }
+            
+            .footer-tagline {
+                font-size: 1rem;
+            }
+            
+            .footer-section-title {
+                font-size: 0.85rem;
+                margin-bottom: 20px;
+            }
+            
+            .social-icons {
+                gap: 10px;
+                margin-bottom: 25px;
+            }
+            
+            .social-icons a {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            
+            .btn-book-call {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+            
+            .footer-bottom-links {
+                justify-content: center;
+                margin-top: 15px;
+            }
+            
+            .copyright-text {
+                text-align: center;
+            }
+            
+            .footer-description {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .privacy-hero {
+                padding: 50px 0 25px;
+            }
+
+            .privacy-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .privacy-section {
+                margin-bottom: 40px;
+            }
+
+            .highlight-box, .contact-info-box {
+                padding: 20px;
+                margin: 25px 0;
+            }
+
+            .footer {
+                padding: 50px 0 25px;
+            }
+            
+            .footer-logo {
+                font-size: 1.6rem;
+            }
+            
+            .footer-description {
+                font-size: 0.9rem;
+                margin-bottom: 25px;
+            }
+            
+            .social-icons {
+                gap: 8px;
+            }
+            
+            .social-icons a {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation - Same as homepage -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.webp" alt="" width="35">
+                Ecomsters
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class='nav-link' href='index.html'>Home</a>
+                    </li>
+                    <li class="nav-item dropdown services-dropdown">
+                        <a class='nav-link dropdown-toggle' href='services.html' role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-4 mega-menu-column">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fab fa-amazon"></i>
+                                            Amazon & Walmart
+                                        </h6>
+                                        <a href="amazon.html" class="mega-menu-item">
+                                            <i class="fas fa-box"></i>
+                                            Amazon FBA Automation
+                                        </a>
+                                        <a href="walmart.html" class="mega-menu-item">
+                                            <i class="fas fa-store"></i>
+                                            Walmart WFS Automation
+                                        </a>
+                                        <a href="amazon-store.html" class="mega-menu-item">
+                                            <i class="fas fa-cog"></i>
+                                            Amazon Store Management
+                                        </a>
+                                        <a href="ama-calculator.html" class="mega-menu-item">
+                                            <i class="fas fa-calculator"></i>
+                                            Amazon Profit Calculator
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 mega-menu-column">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fab fa-tiktok"></i>
+                                            TikTok Services
+                                        </h6>
+                                        <a href="tiktok.html" class="mega-menu-item">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            TikTok Shop Automation
+                                        </a>
+                                        <a href="tiktok-mana.html" class="mega-menu-item">
+                                            <i class="fas fa-tasks"></i>
+                                            TikTok Shop Management
+                                        </a>
+                                        <a href="tiktok-category.html" class="mega-menu-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            TikTok Category Approval
+                                        </a>
+                                        <a href="tiktok-violations.html" class="mega-menu-item">
+                                            <i class="fas fa-shield-alt"></i>
+                                            TikTok Shop Violations
+                                        </a>
+                                        <a href="tiktok-affiliates.html" class="mega-menu-item">
+                                            <i class="fas fa-users"></i>
+                                            TikTok Shop Affiliates
+                                        </a>
+                                        <a href="tik-calculator.html" class="mega-menu-item">
+                                            <i class="fas fa-calculator"></i>
+                                            TikTok Profit Calculator
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 mega-menu-column">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-globe"></i>
+                                            Other Services
+                                        </h6>
+                                        <a href="shopify.html" class="mega-menu-item">
+                                            <i class="fab fa-shopify"></i>
+                                            Shopify Automation
+                                        </a>
+                                        <a href="youtube.html" class="mega-menu-item">
+                                            <i class="fab fa-youtube"></i>
+                                            YouTube Automation
+                                        </a>
+                                        <a href="seo.html" class="mega-menu-item">
+                                            <i class="fas fa-search"></i>
+                                            SEO Services
+                                        </a>
+                                        <a href="smm.html" class="mega-menu-item">
+                                            <i class="fas fa-share-alt"></i>
+                                            Social Media Marketing
+                                        </a>
+                                        <a href="ppc.html" class="mega-menu-item">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            PPC Management
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='about.html'>About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='contact.html'>Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='blog.html'>Blog</a>
+                    </li>
+                </ul>
+                <a class='btn-hire' href='contact.html'>HIRE AN EXPERT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Privacy Policy Hero Section -->
+    <section class="privacy-hero">
+        <div class="container">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Privacy Policy</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Your privacy is important to us. Learn how we collect, use, and protect your personal information when you use our e-commerce automation services.
+            </p>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <section class="privacy-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    
+                    <div class="last-updated" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="fas fa-calendar-alt"></i> Last Updated: January 1, 2025
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <h2>1. Introduction</h2>
+                        <p>Welcome to Ecomsters ("we," "us," "our"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, services, or interact with us in any way.</p>
+                        <p>By accessing our website or using our services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Privacy Policy. If you do not agree with this policy, please do not use our services.</p>
+                        
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-shield-alt"></i> Our Commitment</h4>
+                            <p>At Ecomsters, we believe in transparency and are committed to protecting your personal information with the highest standards of security and confidentiality.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <h2>2. Information We Collect</h2>
+                        
+                        <h3>2.1 Personal Information</h3>
+                        <p>We may collect personal information that you voluntarily provide to us when you:</p>
+                        <ul>
+                            <li>Register for an account or consultation</li>
+                            <li>Fill out forms on our website</li>
+                            <li>Contact us via phone, email, or chat</li>
+                            <li>Subscribe to our newsletter or marketing communications</li>
+                            <li>Participate in surveys, contests, or promotional activities</li>
+                            <li>Apply for our services or request quotes</li>
+                        </ul>
+                        
+                        <p>This personal information may include:</p>
+                        <ul>
+                            <li>Full name and contact information (email, phone, address)</li>
+                            <li>Business information (company name, website, industry)</li>
+                            <li>Financial information (for payment processing)</li>
+                            <li>Professional details and business goals</li>
+                            <li>Communication preferences</li>
+                            <li>Any other information you choose to provide</li>
+                        </ul>
+
+                        <h3>2.2 Automatically Collected Information</h3>
+                        <p>When you visit our website, we may automatically collect certain information about your device and usage patterns, including:</p>
+                        <ul>
+                            <li>IP address and location data</li>
+                            <li>Browser type and version</li>
+                            <li>Operating system</li>
+                            <li>Pages visited and time spent on our site</li>
+                            <li>Referring website and exit pages</li>
+                            <li>Date and time of visits</li>
+                            <li>Click-through rates and user interactions</li>
+                        </ul>
+
+                        <h3>2.3 Cookies and Tracking Technologies</h3>
+                        <p>We use cookies, web beacons, and similar tracking technologies to enhance your browsing experience, analyze website traffic, and personalize content. You can control cookie settings through your browser preferences.</p>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <h2>3. How We Use Your Information</h2>
+                        
+                        <p>We use the collected information for various legitimate business purposes, including:</p>
+                        
+                        <h3>3.1 Service Delivery</h3>
+                        <ul>
+                            <li>Providing and maintaining our e-commerce automation services</li>
+                            <li>Processing your requests and applications</li>
+                            <li>Managing your account and customer relationship</li>
+                            <li>Delivering customer support and technical assistance</li>
+                            <li>Processing payments and managing billing</li>
+                        </ul>
+
+                        <h3>3.2 Communication</h3>
+                        <ul>
+                            <li>Responding to your inquiries and providing information</li>
+                            <li>Sending service updates and important notifications</li>
+                            <li>Delivering newsletters and marketing communications (with consent)</li>
+                            <li>Conducting surveys and gathering feedback</li>
+                        </ul>
+
+                        <h3>3.3 Business Operations</h3>
+                        <ul>
+                            <li>Analyzing usage patterns and improving our services</li>
+                            <li>Conducting research and development</li>
+                            <li>Ensuring security and preventing fraud</li>
+                            <li>Complying with legal obligations</li>
+                            <li>Protecting our rights and interests</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <h2>4. Information Sharing and Disclosure</h2>
+                        
+                        <p>We respect your privacy and do not sell, trade, or rent your personal information to third parties. However, we may share your information in the following circumstances:</p>
+
+                        <h3>4.1 Service Providers</h3>
+                        <p>We may share information with trusted third-party service providers who assist us in:</p>
+                        <ul>
+                            <li>Payment processing and financial services</li>
+                            <li>Cloud hosting and data storage</li>
+                            <li>Email marketing and communication services</li>
+                            <li>Analytics and website optimization</li>
+                            <li>Customer support and helpdesk services</li>
+                        </ul>
+                        
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-handshake"></i> Third-Party Commitments</h4>
+                            <p>All third-party service providers are contractually bound to protect your information and use it only for the specific services they provide to us.</p>
+                        </div>
+
+                        <h3>4.2 Legal Requirements</h3>
+                        <p>We may disclose your information when required by law or in response to:</p>
+                        <ul>
+                            <li>Valid legal processes or government requests</li>
+                            <li>Court orders, subpoenas, or regulatory requirements</li>
+                            <li>Protecting our rights, property, or safety</li>
+                            <li>Preventing fraud or illegal activities</li>
+                            <li>Enforcing our terms of service</li>
+                        </ul>
+
+                        <h3>4.3 Business Transfers</h3>
+                        <p>In the event of a merger, acquisition, or sale of business assets, your information may be transferred as part of the transaction, subject to the same privacy protections.</p>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <h2>5. Data Security</h2>
+                        
+                        <p>We implement robust security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction:</p>
+
+                        <h3>5.1 Technical Safeguards</h3>
+                        <ul>
+                            <li>SSL/TLS encryption for data transmission</li>
+                            <li>Secure server infrastructure and firewalls</li>
+                            <li>Regular security audits and vulnerability assessments</li>
+                            <li>Multi-factor authentication for system access</li>
+                            <li>Data backup and recovery procedures</li>
+                        </ul>
+
+                        <h3>5.2 Administrative Safeguards</h3>
+                        <ul>
+                            <li>Access controls and user permissions</li>
+                            <li>Employee training on data protection</li>
+                            <li>Confidentiality agreements with staff</li>
+                            <li>Regular review of security policies</li>
+                            <li>Incident response procedures</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Important Notice</h4>
+                            <p>While we strive to protect your information using industry-standard security measures, no method of transmission or storage is 100% secure. We cannot guarantee absolute security but continuously work to enhance our protective measures.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                        <h2>6. Your Rights and Choices</h2>
+                        
+                        <p>You have several rights regarding your personal information. Depending on your location and applicable laws, these may include:</p>
+
+                        <h3>6.1 Access and Portability</h3>
+                        <ul>
+                            <li>Request access to your personal information we hold</li>
+                            <li>Obtain a copy of your data in a portable format</li>
+                            <li>Request information about how we process your data</li>
+                        </ul>
+
+                        <h3>6.2 Correction and Updates</h3>
+                        <ul>
+                            <li>Correct inaccurate or incomplete information</li>
+                            <li>Update your contact preferences</li>
+                            <li>Modify your account settings</li>
+                        </ul>
+
+                        <h3>6.3 Deletion and Restriction</h3>
+                        <ul>
+                            <li>Request deletion of your personal information</li>
+                            <li>Restrict or limit how we process your data</li>
+                            <li>Object to certain types of processing</li>
+                        </ul>
+
+                        <h3>6.4 Marketing Communications</h3>
+                        <p>You can opt out of marketing communications at any time by:</p>
+                        <ul>
+                            <li>Clicking unsubscribe links in emails</li>
+                            <li>Updating your communication preferences</li>
+                            <li>Contacting us directly</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                        <h2>7. Cookies and Tracking</h2>
+                        
+                        <p>We use various types of cookies and tracking technologies to enhance your experience:</p>
+
+                        <h3>7.1 Types of Cookies</h3>
+                        <ul>
+                            <li><strong>Essential Cookies:</strong> Required for basic website functionality</li>
+                            <li><strong>Performance Cookies:</strong> Help us analyze website usage and performance</li>
+                            <li><strong>Functional Cookies:</strong> Remember your preferences and settings</li>
+                            <li><strong>Marketing Cookies:</strong> Used to deliver relevant advertisements</li>
+                        </ul>
+
+                        <h3>7.2 Cookie Management</h3>
+                        <p>You can control cookies through your browser settings. Note that disabling certain cookies may affect website functionality. Most browsers allow you to:</p>
+                        <ul>
+                            <li>View and delete cookies</li>
+                            <li>Block all cookies or specific types</li>
+                            <li>Set preferences for cookie acceptance</li>
+                            <li>Receive notifications before cookies are stored</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                        <h2>8. Data Retention</h2>
+                        
+                        <p>We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
+
+                        <h3>8.1 Retention Periods</h3>
+                        <ul>
+                            <li><strong>Account Information:</strong> Retained while your account is active and for a reasonable period thereafter</li>
+                            <li><strong>Transaction Records:</strong> Kept for tax and accounting purposes as required by law</li>
+                            <li><strong>Marketing Data:</strong> Retained until you opt out or we determine it's no longer useful</li>
+                            <li><strong>Website Analytics:</strong> Typically aggregated and anonymized after collection</li>
+                        </ul>
+
+                        <h3>8.2 Secure Disposal</h3>
+                        <p>When we no longer need your information, we securely dispose of it using appropriate technical and organizational measures to prevent unauthorized access.</p>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                        <h2>9. International Data Transfers</h2>
+                        
+                        <p>As a global e-commerce automation service provider, we may transfer your information across borders to:</p>
+                        <ul>
+                            <li>Our servers and data centers</li>
+                            <li>Third-party service providers</li>
+                            <li>Our business partners and affiliates</li>
+                        </ul>
+
+                        <p>We ensure appropriate safeguards are in place for international transfers, including:</p>
+                        <ul>
+                            <li>Adequacy decisions from relevant authorities</li>
+                            <li>Standard contractual clauses</li>
+                            <li>Binding corporate rules</li>
+                            <li>Certification schemes and codes of conduct</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                        <h2>10. Children's Privacy</h2>
+                        
+                        <p>Our services are not intended for children under the age of 16. We do not knowingly collect personal information from children. If we discover that we have inadvertently collected information from a child, we will delete it promptly.</p>
+                        
+                        <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately so we can remove the information.</p>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
+                        <h2>11. Updates to This Policy</h2>
+                        
+                        <p>We may update this Privacy Policy from time to time to reflect:</p>
+                        <ul>
+                            <li>Changes in our business practices</li>
+                            <li>New legal or regulatory requirements</li>
+                            <li>Technological developments</li>
+                            <li>Feedback from users and stakeholders</li>
+                        </ul>
+
+                        <p>When we make material changes, we will:</p>
+                        <ul>
+                            <li>Post the updated policy on our website</li>
+                            <li>Update the "Last Modified" date</li>
+                            <li>Notify you via email or prominent website notice</li>
+                            <li>Obtain your consent where required by law</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-bell"></i> Stay Informed</h4>
+                            <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information and your rights.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+                        <h2>12. Specific Service Information</h2>
+                        
+                        <h3>12.1 E-commerce Platform Integration</h3>
+                        <p>When providing our automation services for platforms like Amazon FBA, Walmart WFS, TikTok Shop, and Shopify, we may:</p>
+                        <ul>
+                            <li>Access your seller account data with your permission</li>
+                            <li>Process order and inventory information</li>
+                            <li>Analyze sales performance and customer data</li>
+                            <li>Manage product listings and promotional campaigns</li>
+                        </ul>
+
+                        <h3>12.2 Third-Party Platform Policies</h3>
+                        <p>Your use of third-party e-commerce platforms is also subject to their respective privacy policies and terms of service. We encourage you to review these policies as well.</p>
+
+                        <h3>12.3 Data Processing Agreements</h3>
+                        <p>For business clients, we may enter into separate data processing agreements that supplement this Privacy Policy with additional terms specific to our service relationship.</p>
+                    </div>
+
+                    <div class="contact-info-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300">
+                        <h3><i class="fas fa-envelope"></i> Contact Us About Privacy</h3>
+                        <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                        <p><strong>Email:</strong> <a href="mailto:privacy@ecomster.com">privacy@ecomster.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+18888550899">+1 (888) 855-0899</a></p>
+                        <p><strong>Address:</strong> 155 NW 38th St, Miami, FL 33127, USA</p>
+                        <p><strong>Response Time:</strong> We will respond to your inquiry within 30 days</p>
+                    </div>
+
+                    <div class="privacy-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400">
+                        <h2>13. Governing Law</h2>
+                        <p>This Privacy Policy is governed by the laws of the United States and the State of Florida, without regard to conflict of law provisions. Any disputes arising from this policy will be resolved in the appropriate courts of Miami-Dade County, Florida.</p>
+                        
+                        <p>For users in other jurisdictions, we will comply with applicable local privacy laws, including but not limited to GDPR, CCPA, and other regional data protection regulations.</p>
+                    </div>
+
+                    <div class="highlight-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                        <h4><i class="fas fa-heart"></i> Thank You for Your Trust</h4>
+                        <p>At Ecomsters, we value your trust and are committed to protecting your privacy. This Privacy Policy reflects our dedication to transparency and responsible data handling. We appreciate your business and look forward to helping you succeed with our e-commerce automation services.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Same as homepage -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="footer-brand">
+                    <div class="footer-logo">
+                        Ecomsters
+                    </div>
+                        <h4 class="footer-tagline">
+                            Smart E-commerce. Real Results.
+                        </h4>
+                    </div>
+                    <p class="footer-description">
+                        Ecomsters delivers expert e-commerce automation, design, and marketing solutions to help your business grow.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ecomautomizedofficial/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ecomautomized/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <a href="#contact" class="btn-book-call">
+                        <i class="fas fa-phone"></i>
+                        Book a Call
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-section-title">SERVICES</h6>
+                    <ul class="footer-links">
+                        <li><a href="amazon.html">Amazon FBA Automation</a></li>
+                        <li><a href="walmart.html">Walmart WFS Automation</a></li>
+                        <li><a href="shopify.html">Shopify Automation</a></li>
+                        <li><a href="tiktok-mana.html">TikTok Shop Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-section-title">LINKS</h6>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-section-title">CONNECT WITH US</h6>
+                    <div class="contact-info">
+                        <h5 class="contact-title">Customer Support</h5>
+                        <ul class="footer-links">
+                            <li><a href="tel:+18888550899">+1 (888) 855-0899</a></li>
+                            <li><a href="mailto:info@ecomster.com">Info@ecomster.com</a></li>
+                            <li><a href="https://g.co/kgs/irmKhXk" target="_blank">155 NW 38th St, Miami, FL 33127, USA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">&copy; 2025 Ecomsters. All rights reserved. <a href="http://www.kaleemify.com">Build by Kaleemify</a></p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-bottom-links">
+                            <a href="terms.html">Terms of Service</a>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        let navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mega menu functionality
+        const servicesDropdown = document.querySelector('.services-dropdown');
+        const megaMenu = document.querySelector('.mega-menu');
+        let hoverTimeout;
+
+        if (window.innerWidth > 991) {
+            // Desktop behavior - hover to show mega menu
+            servicesDropdown.addEventListener('mouseenter', function() {
+                clearTimeout(hoverTimeout);
+                megaMenu.classList.add('show');
+            });
+
+            servicesDropdown.addEventListener('mouseleave', function() {
+                hoverTimeout = setTimeout(() => {
+                    megaMenu.classList.remove('show');
+                }, 200);
+            });
+
+            megaMenu.addEventListener('mouseenter', function() {
+                clearTimeout(hoverTimeout);
+                megaMenu.classList.add('show');
+            });
+
+            megaMenu.addEventListener('mouseleave', function() {
+                megaMenu.classList.remove('show');
+            });
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function (event) {
+            let navbar = document.querySelector('.navbar');
+            let navbarCollapse = document.querySelector('.navbar-collapse');
+            let isClickInsideNav = navbar.contains(event.target);
+
+            if (!isClickInsideNav && navbarCollapse.classList.contains('show')) {
+                let bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: false
+                });
+                bsCollapse.hide();
+            }
+        });
+
+        // Scroll to top functionality
+        const scrollTop = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        });
+
+        scrollTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navbarHeight = navbar.offsetHeight;
+                    const targetPosition = target.offsetTop - navbarHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Page loaded event
+        window.addEventListener('load', function () {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomsters Blog - Latest E-commerce Automation Insights & Tips</title>
+    <meta name="description" content="Stay updated with the latest e-commerce automation trends, YouTube automation strategies, and business growth tips from Ecomsters experts. Read our comprehensive guides and insights.">
+    <meta name="keywords" content="ecommerce automation blog, YouTube automation tips, business growth strategies, Amazon FBA insights, TikTok Shop guides, Shopify automation">
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ecomsters.com/blog" />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ecomsters.com/blog">
+    <meta property="og:title" content="Ecomsters Blog - Latest E-commerce Automation Insights & Tips">
+    <meta property="og:description" content="Stay updated with the latest e-commerce automation trends, YouTube automation strategies, and business growth tips from Ecomsters experts.">
+    <meta property="og:image" content="https://www.ecomsters.com/images/blog-preview.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ecomsters Blog - Latest E-commerce Automation Insights & Tips">
+    <meta name="twitter:description" content="Stay updated with the latest e-commerce automation trends, YouTube automation strategies, and business growth tips from Ecomsters experts.">
+    <meta name="twitter:image" content="https://www.ecomsters.com/images/blog-preview.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Ecomsters Blog",
+      "description": "Latest e-commerce automation insights and tips",
+      "url": "https://www.ecomsters.com/blog",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ecomsters",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.ecomsters.com/logo.webp"
+        }
+      }
+    }
+    </script>
+
+    <!-- CDN Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Archivo+Black&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-orange: #ff9c08;
+            --dark-blue: #232f3e;
+            --light-gray: #f8f9fa;
+            --text-dark: #333;
+            --gradient-orange: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+            --gradient-blue: linear-gradient(135deg, #232f3e 0%, #1a252f 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Header Styles - ENHANCED FOR MOBILE */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 8px 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar.scrolled {
+            background: rgba(35, 47, 62, 0.95);
+            padding: 6px 0;
+        }
+
+        .navbar.scrolled .nav-link {
+            color: white !important;
+        }
+
+        .navbar.scrolled .navbar-brand {
+            color: white !important;
+        }
+
+        .navbar-brand {
+            color: var(--text-dark) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 700;
+            margin: 0 6px;
+            padding: 8px 12px !important;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: min(0.75vw, 12px);
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-orange) !important;
+            background: rgba(255, 156, 8, 0.1);
+        }
+
+        .navbar.scrolled .nav-link:hover {
+            color: var(--primary-orange) !important;
+            background: rgba(255, 156, 8, 0.2);
+        }
+
+        .btn-hire {
+            background: var(--primary-orange);
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-orange);
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .btn-hire:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 156, 8, 0.3);
+        }
+
+        /* MEGA MENU STYLES */
+        .navbar-nav .dropdown {
+            position: static;
+        }
+
+        .mega-menu {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: white;
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
+            padding: 40px 0;
+            margin-top: 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .mega-menu.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .navbar.scrolled .mega-menu {
+            background: var(--dark-blue);
+            color: white;
+        }
+
+        .mega-menu-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .mega-menu-column {
+            padding: 0 20px;
+        }
+
+        .mega-menu-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-orange);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar.scrolled .mega-menu-title {
+            color: var(--primary-orange);
+        }
+
+        .mega-menu-item {
+            display: block;
+            padding: 8px 0;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .mega-menu-item:hover {
+            color: var(--primary-orange);
+            padding-left: 10px;
+        }
+
+        .navbar.scrolled .mega-menu-item {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .navbar.scrolled .mega-menu-item:hover {
+            color: var(--primary-orange);
+        }
+
+        .mega-menu-item i {
+            width: 18px;
+            margin-right: 8px;
+            font-size: 12px;
+        }
+
+        /* Services hover trigger */
+        .services-dropdown {
+            position: relative;
+        }
+
+        .services-dropdown:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Mobile Menu - HIGHLY ENHANCED */
+        .navbar-toggler {
+            border: 2px solid var(--text-dark);
+            padding: 4px 6px;
+            border-radius: 8px;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 0.25rem rgba(255, 156, 8, 0.25);
+            border-color: var(--primary-orange);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            width: 20px;
+            height: 20px;
+        }
+
+        .navbar.scrolled .navbar-toggler {
+            border-color: white;
+        }
+
+        .navbar.scrolled .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* ENHANCED MOBILE RESPONSIVENESS */
+        @media (max-width: 1199.98px) {
+            .nav-link {
+                font-size: 11px;
+                margin: 0 3px;
+                padding: 6px 8px !important;
+            }
+            
+            .btn-hire {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar {
+                padding: 6px 0;
+            }
+            
+            .navbar-collapse {
+                background: white;
+                margin-top: 12px;
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                position: absolute;
+                top: 100%;
+                left: 10px;
+                right: 10px;
+                z-index: 1000;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+
+            .navbar.scrolled .navbar-collapse {
+                background: var(--dark-blue);
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .navbar-nav {
+                gap: 3px;
+            }
+
+            .nav-item {
+                width: 100%;
+            }
+
+            .nav-link {
+                margin: 0;
+                padding: 10px 14px !important;
+                border-radius: 8px;
+                font-size: 14px;
+                text-align: left;
+                width: 100%;
+                display: block;
+                font-weight: 600;
+            }
+
+            /* Mobile Mega Menu */
+            .mega-menu {
+                position: static !important;
+                transform: none !important;
+                margin-top: 3px;
+                margin-left: 14px;
+                width: calc(100% - 28px);
+                background: rgba(0, 0, 0, 0.05);
+                box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                padding: 15px;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .navbar.scrolled .mega-menu {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            .mega-menu-content {
+                padding: 0;
+            }
+
+            .mega-menu-column {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .mega-menu-column:last-child {
+                border-bottom: none;
+            }
+
+            .navbar.scrolled .mega-menu-column {
+                border-bottom-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .mega-menu-title {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .mega-menu-item {
+                padding: 5px 0;
+                font-size: 12px;
+            }
+
+            .btn-hire {
+                margin-top: 12px;
+                padding: 12px 20px;
+                text-align: center;
+                display: block;
+                width: 100%;
+                font-size: 14px;
+            }
+
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            /* Enhanced mobile menu colors */
+            .navbar-collapse .nav-link,
+            .navbar-collapse .mega-menu-item {
+                color: black !important;
+            }
+
+            .navbar-collapse .nav-link:hover,
+            .navbar-collapse .mega-menu-item:hover {
+                color: var(--primary-orange) !important;
+            }
+
+            .navbar.scrolled .navbar-collapse .nav-link,
+            .navbar.scrolled .navbar-collapse .mega-menu-item {
+                color: white !important;
+            }
+
+            .navbar.scrolled .navbar-collapse .nav-link:hover,
+            .navbar.scrolled .navbar-collapse .mega-menu-item:hover {
+                color: var(--primary-orange) !important;
+            }
+
+            /* Fix mobile menu positioning */
+            .navbar>.container {
+                position: relative;
+            }
+
+            .dropdown {
+                position: static !important;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .navbar {
+                padding: 4px 0;
+            }
+            
+            .navbar-collapse {
+                left: 8px;
+                right: 8px;
+                padding: 16px;
+                margin-top: 8px;
+            }
+
+            .navbar-brand {
+                font-size: 1.1rem;
+            }
+
+            .nav-link {
+                font-size: 13px;
+                padding: 8px 12px !important;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .navbar-collapse {
+                left: 5px;
+                right: 5px;
+                padding: 14px;
+            }
+
+            .navbar-brand {
+                font-size: 1rem;
+            }
+
+            .nav-link {
+                font-size: 12px;
+                padding: 7px 10px !important;
+            }
+        }
+
+        /* Scrollbar for mobile dropdown */
+        .navbar-collapse::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .navbar-collapse::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+        }
+
+        .navbar-collapse::-webkit-scrollbar-thumb {
+            background: var(--primary-orange);
+            border-radius: 2px;
+        }
+
+        /* Blog Hero Section */
+        .blog-hero-section {
+            background: var(--gradient-orange);
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 110%;
+            height: 110%;
+            background-image:
+                linear-gradient(45deg, rgba(255, 174, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(-45deg, rgba(255, 145, 0, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: moveBackground 20s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(30px, 30px);
+            }
+        }
+
+        .blog-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-tag {
+            background: var(--primary-orange);
+            color: var(--dark-blue);
+            padding: 8px 20px;
+            font-weight: 700 !important;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--dark-blue);
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Blog Grid Section */
+        .blog-grid-section {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .blog-grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover .blog-image {
+            transform: scale(1.05);
+        }
+
+        .blog-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-category {
+            background: var(--primary-orange);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .blog-excerpt {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-date {
+            color: #999;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-read-time {
+            color: var(--primary-orange);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .blog-link {
+            background: var(--primary-orange);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .blog-link:hover {
+            background: var(--dark-blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .newsletter-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .newsletter-description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            min-width: 250px;
+        }
+
+        .newsletter-btn {
+            background: var(--primary-orange);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .newsletter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 156, 8, 0.3);
+        }
+
+        /* Featured Section */
+        .featured-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.3;
+            text-align: center;
+            color: var(--dark-blue);
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 50px;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Modern Footer */
+        .footer {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+        }
+
+        .footer-brand {
+            margin-bottom: 30px;
+        }
+
+        .footer-logo {
+            font-weight: 800;
+            font-size: 2rem;
+            background: linear-gradient(135deg, var(--primary-orange), #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .footer-tagline {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 35px;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .footer-section-title {
+            color: var(--primary-orange);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .footer-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-orange), #ffb347);
+            border-radius: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .footer-links a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, var(--primary-orange), #ffb347);
+            transition: width 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-orange);
+            padding-left: 8px;
+        }
+
+        .footer-links a:hover::before {
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .contact-title {
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .social-icons a {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.1rem;
+        }
+
+        .social-icons a:hover {
+            background: linear-gradient(135deg, var(--primary-orange), #ffb347);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 156, 8, 0.3);
+            border-color: transparent;
+        }
+
+        .btn-book-call {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--primary-orange), #ffb347);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(255, 156, 8, 0.3);
+        }
+
+        .btn-book-call:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 156, 8, 0.4);
+            color: white;
+        }
+
+        .btn-book-call i {
+            font-size: 0.9rem;
+        }
+
+        .footer-divider {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            margin: 50px 0 30px;
+        }
+
+        .footer-bottom {
+            padding-top: 20px;
+        }
+
+        .copyright-text {
+            color: rgba(255, 255, 255, 0.5);
+            margin: 0;
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+
+        .footer-bottom-links a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-orange);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .blog-grid-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 0 15px;
+            }
+
+            .blog-card {
+                margin: 0 10px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-input {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .newsletter-btn {
+                width: 100%;
+                max-width: 200px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .blog-grid-section,
+            .featured-section,
+            .newsletter-section {
+                padding: 60px 0;
+            }
+
+            .blog-hero-section {
+                padding: 100px 0 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .blog-grid-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 0 10px;
+            }
+
+            .blog-content {
+                padding: 20px;
+            }
+
+            .newsletter-title {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* Footer Responsive Design */
+        @media (max-width: 768px) {
+            .footer {
+                padding: 60px 0 30px;
+            }
+            
+            .footer-logo {
+                font-size: 1.8rem;
+            }
+            
+            .footer-tagline {
+                font-size: 1rem;
+            }
+            
+            .footer-section-title {
+                font-size: 0.85rem;
+                margin-bottom: 20px;
+            }
+            
+            .social-icons {
+                gap: 10px;
+                margin-bottom: 25px;
+            }
+            
+            .social-icons a {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            
+            .btn-book-call {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+            
+            .footer-bottom-links {
+                justify-content: center;
+                margin-top: 15px;
+            }
+            
+            .copyright-text {
+                text-align: center;
+            }
+            
+            .footer-description {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer {
+                padding: 50px 0 25px;
+            }
+            
+            .footer-logo {
+                font-size: 1.6rem;
+            }
+            
+            .footer-description {
+                font-size: 0.85rem;
+            }
+            
+            .social-icons a {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+            
+            .btn-book-call {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-orange);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.webp" alt="" width="35">
+                Ecomsters
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class='nav-link' href='index.html'>Home</a>
+                    </li>
+                    <li class="nav-item dropdown services-dropdown">
+                        <a class='nav-link dropdown-toggle' href='services.html' role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-4 mega-menu-column">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fab fa-amazon"></i>
+                                            Amazon & Walmart
+                                        </h6>
+                                        <a href="amazon.html" class="mega-menu-item">
+                                            <i class="fas fa-box"></i>
+                                            Amazon FBA Automation
+                                        </a>
+                                        <a href="walmart.html" class="mega-menu-item">
+                                            <i class="fas fa-store"></i>
+                                            Walmart WFS Automation
+                                        </a>
+                                        <a href="amazon-store.html" class="mega-menu-item">
+                                            <i class="fas fa-cog"></i>
+                                            Amazon Store Management
+                                        </a>
+                                        <a href="ama-calculator.html" class="mega-menu-item">
+                                            <i class="fas fa-calculator"></i>
+                                            Amazon Profit Calculator
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 mega-menu-column">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fab fa-tiktok"></i>
+                                            TikTok Services
+                                        </h6>
+                                        <a href="tiktok.html" class="mega-menu-item">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            TikTok Shop Automation
+                                        </a>
+                                        <a href="tiktok-mana.html" class="mega-menu-item">
+                                            <i class="fas fa-tasks"></i>
+                                            TikTok Shop Management
+                                        </a>
+                                        <a href="tiktok-category.html" class="mega-menu-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            TikTok Category Approval
+                                        </a>
+                                        <a href="tiktok-violations.html" class="mega-menu-item">
+                                            <i class="fas fa-shield-alt"></i>
+                                            TikTok Shop Violations
+                                        </a>
+                                        <a href="tiktok-affiliates.html" class="mega-menu-item">
+                                            <i class="fas fa-users"></i>
+                                            TikTok Shop Affiliates
+                                        </a>
+                                        <a href="tik-calculator.html" class="mega-menu-item">
+                                            <i class="fas fa-calculator"></i>
+                                            TikTok Profit Calculator
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 mega-menu-column">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-globe"></i>
+                                            Other Services
+                                        </h6>
+                                        <a href="shopify.html" class="mega-menu-item">
+                                            <i class="fab fa-shopify"></i>
+                                            Shopify Automation
+                                        </a>
+                                        <a href="youtube.html" class="mega-menu-item">
+                                            <i class="fab fa-youtube"></i>
+                                            YouTube Automation
+                                        </a>
+                                        <a href="seo.html" class="mega-menu-item">
+                                            <i class="fas fa-search"></i>
+                                            SEO Services
+                                        </a>
+                                        <a href="smm.html" class="mega-menu-item">
+                                            <i class="fas fa-share-alt"></i>
+                                            Social Media Marketing
+                                        </a>
+                                        <a href="ppc.html" class="mega-menu-item">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                            PPC Management
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='about.html'>About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='contact.html'>Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='blog.html'>Blog</a>
+                    </li>
+                </ul>
+                <a class='btn-hire' href='contact.html'>HIRE AN EXPERT</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Blog Hero Section -->
+    <section class="blog-hero-section">
+        <div class="container">
+            <div class="blog-hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <span class="hero-tag">ECOMSTERS BLOG</span>
+                <h1 class="hero-title">Latest E-commerce Automation Insights & Tips</h1>
+                <p class="hero-description">
+                    Stay updated with the latest e-commerce automation trends, YouTube automation strategies, and business growth tips from Ecomsters experts. Read our comprehensive guides and insights to scale your online business effectively.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Posts Section -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">Featured Articles</h2>
+                <p class="section-subtitle">
+                    Discover expert insights and proven strategies to automate and scale your e-commerce business across multiple platforms.
+                </p>
+            </div>
+            
+            <div class="blog-grid-container">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <img src="https://internal-blog.contentstudio.io/wp-content/uploads/2022/07/15-Best-YouTube-Automation-Tools-to-Grow-Your-Channel-in-2022.jpg" 
+                         alt="YouTube Automation Guide" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">YouTube Automation</span>
+                        <h3 class="blog-title">What Is YouTube Automation? Everything You Need to Know</h3>
+                        <p class="blog-excerpt">
+                            In the era of rapid change in digital production of content, YouTube Automation has been a breakthrough method to manage channels without the manual work required. Here at Ecomsters we are aware of the need for better more efficient methods to create a YouTube presence. This complete guide will explain the intricacies that are involved in YouTube Automation, explaining how it works, what benefits it offers and ways to utilize it to accelerate the growth of your channel.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                January 15, 2025
+                            </span>
+                            <span class="blog-read-time">8 min read</span>
+                        </div>
+                        <a href="blog1.html" class="blog-link">
+                            Read Full Article
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="https://www.sweetprocess.com/wp-content/uploads/2024/03/Picture15.jpg" 
+                         alt="E-commerce Automation Sales Growth" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">E-commerce Automation</span>
+                        <h3 class="blog-title">How Ecommerce Automation Can Skyrocket Your Sales and Save Time</h3>
+                        <p class="blog-excerpt">
+                            In today's highly competitive online marketplace, ecommerce automation is the key element that distinguishes successful online companies from those that struggle to keep up. Automating e-commerce processes is not a luxury anymore, but an essential strategic requirement that will not just increase sales, but also free up time for entrepreneurs. This article examines the ways in which leveraging the power of e-commerce automation with clever workflows, AI-powered software and efficient processes can transform your business.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                January 12, 2025
+                            </span>
+                            <span class="blog-read-time">12 min read</span>
+                        </div>
+                        <a href="blog2.html" class="blog-link">
+                            Read Full Article
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="newsletter-title">Stay Updated with Latest Insights</h2>
+                <p class="newsletter-description">
+                    Subscribe to our newsletter and get the latest e-commerce automation tips, industry trends, and exclusive strategies delivered directly to your inbox.
+                </p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="newsletter-btn">
+                        Subscribe Now
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Resources Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">Explore More Resources</h2>
+                <p class="section-subtitle">
+                    Ready to take your e-commerce business to the next level? Discover our comprehensive automation services and expert consultation options.
+                </p>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); height: 100%;">
+                            <i class="fas fa-rocket" style="font-size: 3rem; color: var(--primary-orange); margin-bottom: 20px;"></i>
+                            <h4 style="color: var(--dark-blue); margin-bottom: 15px;">Get Started</h4>
+                            <p style="color: #666; margin-bottom: 25px;">Ready to automate your e-commerce business? Book a free consultation with our experts.</p>
+                            <a href="contact.html" class="btn-primary-custom">Book Consultation</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); height: 100%;">
+                            <i class="fas fa-cogs" style="font-size: 3rem; color: var(--primary-orange); margin-bottom: 20px;"></i>
+                            <h4 style="color: var(--dark-blue); margin-bottom: 15px;">Our Services</h4>
+                            <p style="color: #666; margin-bottom: 25px;">Explore our comprehensive automation services for Amazon, Shopify, TikTok Shop, and more.</p>
+                            <a href="services.html" class="btn-primary-custom">View Services</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div style="text-align: center; padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); height: 100%;">
+                            <i class="fas fa-phone-alt" style="font-size: 3rem; color: var(--primary-orange); margin-bottom: 20px;"></i>
+                            <h4 style="color: var(--dark-blue); margin-bottom: 15px;">Talk to Expert</h4>
+                            <p style="color: #666; margin-bottom: 25px;">Have questions? Speak directly with our automation specialists for personalized guidance.</p>
+                            <a href="tel:+18888550899" class="btn-primary-custom">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="footer-brand">
+                    <div class="footer-logo">
+                        Ecomsters
+                    </div>
+                        <h4 class="footer-tagline">
+                            Smart E-commerce. Real Results.
+                        </h4>
+                    </div>
+                    <p class="footer-description">
+                        Ecomsters delivers expert e-commerce automation, design, and marketing solutions to help your business grow.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ecomautomizedofficial/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ecomautomized/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <a href="#contact" class="btn-book-call">
+                        <i class="fas fa-phone"></i>
+                        Book a Call
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-section-title">SERVICES</h6>
+                    <ul class="footer-links">
+                        <li><a href="amazon.html">Amazon FBA Automation</a></li>
+                        <li><a href="walmart.html">Walmart WFS Automation</a></li>
+                        <li><a href="shopify.html">Shopify Automation</a></li>
+                        <li><a href="tiktok-mana.html">TikTok Shop Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-section-title">LINKS</h6>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-section-title">CONNECT WITH US</h6>
+                    <div class="contact-info">
+                        <h5 class="contact-title">Customer Support</h5>
+                        <ul class="footer-links">
+                            <li><a href="tel:+18888550899">+1 (888) 855-0899</a></li>
+                            <li><a href="mailto:info@ecomster.com">Info@ecomster.com</a></li>
+                            <li><a href="https://g.co/kgs/irmKhXk" target="_blank">155 NW 38th St, Miami, FL 33127, USA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">&copy; 2025 Ecomsters. All rights reserved. <a href="http://www.kaleemify.com">Build by Kaleemify</a></p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-bottom-links">
+                            <a href="terms.html">Terms of Service</a>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Email Success Message -->
+    <div class="email-success" id="emailSuccess">
+        <i class="fas fa-check-circle"></i> Email app opened successfully!
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        let navbar = document.querySelector('.navbar');
+        let scrollTop = document.getElementById('scrollTop');
+        let hoverTimeout;
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                scrollTop.classList.add('show');
+            } else {
+                navbar.classList.remove('scrolled');
+                scrollTop.classList.remove('show');
+            }
+        });
+
+        // Scroll to top
+        scrollTop.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mega menu functionality
+        const servicesDropdown = document.querySelector('.services-dropdown');
+        const megaMenu = document.querySelector('.mega-menu');
+        const servicesLink = document.querySelector('.services-dropdown .nav-link');
+
+        if (window.innerWidth > 991) {
+            // Desktop behavior - hover to show mega menu
+            servicesDropdown.addEventListener('mouseenter', function() {
+                clearTimeout(hoverTimeout);
+                megaMenu.classList.add('show');
+            });
+
+            servicesDropdown.addEventListener('mouseleave', function() {
+                hoverTimeout = setTimeout(() => {
+                    megaMenu.classList.remove('show');
+                }, 200);
+            });
+
+            megaMenu.addEventListener('mouseenter', function() {
+                clearTimeout(hoverTimeout);
+                megaMenu.classList.add('show');
+            });
+
+            megaMenu.addEventListener('mouseleave', function() {
+                megaMenu.classList.remove('show');
+            });
+
+            // Click on Services link should navigate to services.html
+            servicesLink.addEventListener('click', function(e) {
+                window.location.href = 'services.html';
+            });
+        } else {
+            // Mobile behavior - click to toggle mega menu
+            servicesLink.addEventListener('click', function(e) {
+                if (megaMenu.classList.contains('show')) {
+                    megaMenu.classList.remove('show');
+                } else {
+                    megaMenu.classList.add('show');
+                }
+                e.preventDefault();
+            });
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function (event) {
+            let navbar = document.querySelector('.navbar');
+            let navbarCollapse = document.querySelector('.navbar-collapse');
+            let isClickInsideNav = navbar.contains(event.target);
+
+            if (!isClickInsideNav && navbarCollapse.classList.contains('show')) {
+                let bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: false
+                });
+                bsCollapse.hide();
+            }
+        });
+
+        // Newsletter form submission
+        document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            const button = this.querySelector('button');
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Subscribing...';
+            button.disabled = true;
+
+            // Create email link
+            const subject = encodeURIComponent('Newsletter Subscription - Ecomsters Blog');
+            const body = encodeURIComponent(`Hello,\n\nI would like to subscribe to the Ecomsters newsletter.\n\nEmail: ${email}\n\nThank you!`);
+            const emailLink = `mailto:info@ecomster.com?subject=${subject}&body=${body}`;
+
+            setTimeout(() => {
+                window.location.href = emailLink;
+                
+                // Reset form
+                this.reset();
+                button.innerHTML = originalText;
+                button.disabled = false;
+
+                // Show success message
+                alert('Thank you for subscribing! Your email app has been opened with the subscription request.');
+            }, 1000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navbarHeight = navbar.offsetHeight;
+                    const targetPosition = target.offsetTop - navbarHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Blog card hover effects
+        document.querySelectorAll('.blog-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Page loaded event
+        window.addEventListener('load', function () {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+
+</html>
